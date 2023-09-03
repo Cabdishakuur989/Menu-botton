@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+ <html lang="en">
+  <head>
+   	<meta charset="UTF-8"> 
+   		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 	<title>Responsive Navbar</title> 
+   		
+		<link rel="stylesheet" type="text/css" href="hada.css"> 	
+   		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+   		</head>
+        <style>*{ margin: 0; padding: 0; }
+            body { background: linear-gradient( #ffffff,#e4d9e6); height: 100vh; }
+             nav { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; font-size: 18px; font-weight: bold; font-family: sans-serif; padding: 15px; background: linear-gradient(#808080,#3fada8); }
+              nav a { text-decoration: none; color: white; }
+               .list{ 	display: flex; 	list-style: none; 	gap: 25px; }
+                #toggler, label{ display: none; }
+                 label i{ color:rgb(0, 0, 0); }
+                  @media screen and (max-width: 650px)
+                  { .menu{ width: 100%; max-height: 0; overflow: hidden; } 
+                  label{ display: inline-flex; } 
+                  #toggler:checked~.menu{ max-height: 100%; }
+                   .list{ flex-direction: column; align-items: center; padding: 20px;
+                    }
+                  
+                    
+                    
+                    
+                    
+                    
+                    
+                    </style>
+   		<body> 	 
+   		<nav> 
+		<a href="#">TISQAAD</a> 	
+		<label for="toggler"> 	
+   		<i class="fa fa-bars"></i> 
+   		</label> 	<input type="checkbox" id="toggler" name="hamburger.png"> 		
+		<div class="menu"> 			
+        <ul class="list"> 		
+ 		<li><a href="#">About</a></li> 	
+	    <li><a href="#">Home</a></li> 			
+		<li><a href="#">Contact</a></li> 				
+		<li><a href="#">Services</a></li> 				
+					
+		</ul> 		
+		</div> 
+	</nav>
+	 </body> 
+	 </html>
